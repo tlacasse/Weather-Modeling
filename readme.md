@@ -37,13 +37,13 @@ for more details. The columns explored were as follows:
 | Column Name | Notes |
 | ----------- | ----- |
 | HourlyAltimeterSetting | Float (.xx). <br> An appended “s” is a “suspect value” and was ignored. |
-| HourlyDewPointTemperature	Integer. <br> Ignored “s”. |
+| HourlyDewPointTemperature	| Integer. <br> Ignored “s”. |
 | HourlyDryBulbTemperature | Integer. <br> Ignored “s”. |
 | HourlyPrecipitation | float (.xx). <br> A “T” means trace precipitation, and was treated as a 0. <br> Ignored “s”. |
 | HourlyRelativeHumidity | Integer. |
-| HourlySkyConditions | String xxx:nn nn.  <br>  Cloud description  <br>  CLR: clear sky  <br>  FEW: few clouds  <br>  SCT: scattered clouds  <br> BKN: broken clouds  <br> OVC: overcast  <br> VV: obscured sky  <br>  Up to 3 layers, last layer was used since it is the most representative of the sky conditions.  <br> Numbers were not used.  <br>  Ex: "BKN:07 13 OVC:08 49" -> "OVC" |
+| HourlySkyConditions | String xxx:nn nn.  <br>  Cloud description  <br>&nbsp;  CLR: clear sky  <br>&nbsp;  FEW: few clouds  <br>&nbsp;  SCT: scattered clouds  <br>&nbsp; BKN: broken clouds  <br>&nbsp; OVC: overcast  <br>&nbsp; VV: obscured sky  <br>  Up to 3 layers, last layer was used since it is the most representative of the sky conditions.  <br> Numbers were not used.  <br>  Ex: "BKN:07 13 OVC:08 49" -> "OVC" |
 | HourlyWetBulbTemperature | Integer. |
-| HourlyWindDirection | Integer.  <br> 0: calm winds  <br> 90: east  <br> 180: south  <br> 270: west  <br>  360: north  <br> "VRB", which is “variable wind direction”, was treated as 0. |
+| HourlyWindDirection | Integer.  <br>&nbsp; 0: calm winds  <br>&nbsp; 90: east  <br>&nbsp; 180: south  <br>&nbsp; 270: west  <br>&nbsp;  360: north  <br>&nbsp; "VRB", which is “variable wind direction”, was treated as 0. |
 | HourlyWindSpeed | Integer. <br> Ignored “s”. |
 
 The USGS river data is recorded in 15-minute intervals, with a variety of information, inconsistently present. “Discharge” and “Gage height” seemed 
