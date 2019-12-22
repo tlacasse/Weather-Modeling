@@ -68,7 +68,7 @@ The linear choice is arbitrary for simplicity, other types (such as Gaussian) wo
 is to scale up the small GageHeight values to the full grayscale range and reinforce its values, and allow it to “spread” to where there is no data. 
 The low resolution helps the “spread” without too large of a kernel, and encourages spatially more general data. This happens at each discrete time step (hour). 
 
-The coordinates of the airport can then be mapped down to these same dimensions (approximately the center) to obtain values for GageHeight. A separate HMM is 
+The coordinates of the airport can then be mapped down to these same dimensions (approximately the center) to obtain values for GageHeight. A separate Hidden Markov Model (HMM) is 
 created for each of the four weather columns as hidden states, and each using the same estimated airport GageHeight as the observable emissions. The source 
 GageHeight values are remapped to the reduced and filtered image and generated weather using predictions of the HMMs are visualized on top of the grid. Each 
 cell in the grid shows a collection of clouds based on the prediction of the “spread” GageHeight value in the cell. HourlySkyConditions is shown in the number 
