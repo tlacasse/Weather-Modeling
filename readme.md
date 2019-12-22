@@ -31,7 +31,7 @@ limits the number of stations available. Also, hourly points were chosen for max
 
 The NOAA station sources are Connecticut airports. The Oxford airport was chosen due to its personal value and presence 
 of surrounding USGS river gauges. The data contains multiple types of records (including daily and monthly summaries), 
-but the hourly “METAR Aviation routine weather report” records were used here. Refer to the “LCD Dataset Documentation” 
+but the hourly “METAR Aviation routine weather report” (FM-15) records were used here. Refer to the “LCD Dataset Documentation” 
 for more details. The columns explored were as follows:
 
 | Column Name | Notes |
