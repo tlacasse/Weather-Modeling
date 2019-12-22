@@ -115,12 +115,8 @@ class CloudCell:
         
     def _sublist(self, a, size):
         return a[:size]
-        #start = np.random.randint(len(a) - size + 1)
-        #return a[start:start+size]
         
     def draw(self, img, cloud, direction, speed):
-        #c = cloud * 50
-        #cv2.rectangle(img, (self._j(), self._i()), (self._j(1), self._i(1)), [c, c, c], thickness=-1)
         for c in self.conditions[cloud]:
             c.draw(img, cloud, direction, speed)
         return img
