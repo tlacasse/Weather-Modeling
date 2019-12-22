@@ -36,15 +36,10 @@ for more details. The columns explored were as follows:
 
 | Column Name | Notes |
 | ----------- | ----- |
-| HourlyAltimeterSetting | Float (.xx).
-An appended “s” is a “suspect value” and was ignored. |
-| HourlyDewPointTemperature	Integer.
-Ignored “s”. |
-| HourlyDryBulbTemperature | Integer.
-Ignored “s”. |
-| HourlyPrecipitation | float (.xx).
-A “T” means trace precipitation, and was treated as a 0.
-Ignored “s”. |
+| HourlyAltimeterSetting | Float (.xx). <br> An appended “s” is a “suspect value” and was ignored. |
+| HourlyDewPointTemperature	Integer. <br> Ignored “s”. |
+| HourlyDryBulbTemperature | Integer. <br> Ignored “s”. |
+| HourlyPrecipitation | float (.xx). <br> A “T” means trace precipitation, and was treated as a 0. <br> Ignored “s”. |
 | HourlyRelativeHumidity | Integer. |
 | HourlySkyConditions | String xxx:nn nn.  <br>  Cloud description  <br>  CLR: clear sky  <br>  FEW: few clouds  <br>  SCT: scattered clouds  <br> BKN: broken clouds  <br> OVC: overcast  <br> VV: obscured sky  <br>  Up to 3 layers, last layer was used since it is the most representative of the sky conditions.  <br> Numbers were not used.  <br>  Ex: "BKN:07 13 OVC:08 49" -> "OVC" |
 | HourlyWetBulbTemperature | Integer. |
