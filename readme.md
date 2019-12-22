@@ -78,6 +78,8 @@ are treated as a speed of 0. The HourlyPrecipitation model was predicting precip
 The gray dots are the locations of the river gauges in the reduced image dimensions. The visualization clearly contains some artifacts of the reduce and “spread” method, 
 such as the bottom left corner, which is always cloudy due to a lack of data. The resulting visualization is interesting nonetheless.
 
+![visualization example](/images/final_visual.gif)
+
 ### Possible Future Work
 
 - Make a more cohesive model.
